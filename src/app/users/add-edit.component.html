@@ -1,0 +1,43 @@
+﻿<h1 *ngIf="isAddMode">Add User</h1>
+<h1 *ngIf="!isAddMode">Edit User</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                <div *ngIf="f.name.errors.required">First Name is required</div>
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="brand">Brand</label>
+            <input type="text" formControlName="brand" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.brand.errors }" />
+            <div *ngIf="submitted && f.brand.errors" class="invalid-feedback">
+                <div *ngIf="f.brand.errors.required">Last Name is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="color">Color</label>
+            <input type="text" formControlName="color" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.color.errors }" />
+            <div *ngIf="submitted && f.color.errors" class="invalid-feedback">
+                <div *ngIf="f.color.errors.required">color is required</div>
+            </div>
+        </div>
+        <div class="form-group col">
+            <label for="price">
+                Price
+            </label>
+            <input type="number" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }" />
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Save
+        </button>
+        <a routerLink="/users" class="btn btn-link">Cancel</a>
+    </div>
+</form>
