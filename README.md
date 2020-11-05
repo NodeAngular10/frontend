@@ -11,7 +11,7 @@ Tech Used
 
 ## Installation
 
-After cloning run `npm install` to install the dependency
+After cloning run `npm install` to install the dependency and execute `npm start`, your application will be opened on your default browser at `http://localhost:4200`
 
 ![login.png](login.png)
 
@@ -20,3 +20,5 @@ Login Page
 ![list.png](list.png)
 
 Product List
+
+![Angular.gif](Angular.gif)
