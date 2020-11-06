@@ -34,3 +34,9 @@ Product List
 - [x]  Use state management.
 - [x]  Use rxjs operators.
 - [ ]  No pages styling is required. Used Bootstrap
+- [x]  Login page, the user should be able to login using username and password.
+- [x]  logout.
+- [x]  Create new products.
+- [x]  List products.
+- [x]  View product, when the user clicks on one of the rows, the system should display a view product with product details.
+- [x]  Delete one or more products.
