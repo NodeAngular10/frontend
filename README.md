@@ -28,8 +28,6 @@ Product List
 ### Requirements Covered
 
 
-### **Notes**
-
 - [ ]  Provide test coverage.
 - [x]  Use state management.
 - [x]  Use rxjs operators.
