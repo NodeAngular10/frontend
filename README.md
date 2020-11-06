@@ -22,3 +22,15 @@ Login Page
 Product List
 
 ![Angular.gif](Angular.gif)
+
+---
+
+### Requirements Covered
+
+
+### **Notes**
+
+- [ ]  Provide test coverage.
+- [x]  Use state management.
+- [x]  Use rxjs operators.
+- [ ]  No pages styling is required. Used Bootstrap
